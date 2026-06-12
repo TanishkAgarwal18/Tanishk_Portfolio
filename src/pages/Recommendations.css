@@ -1,0 +1,80 @@
+/* Container centers content vertically & horizontally on dark background */
+.recommendations-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  min-height: 80vh;
+  width: 90vw;
+  margin-left: 100px;
+  background-color: #141414; /* Netflix dark background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card with solid background, no shadows, simple border accent */
+.recommendation-card {
+  max-width: 700px;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-left: 5px solid #e50914; /* Netflix red accent bar */
+  border-radius: 8px;
+  padding: 30px 30px 25px;
+  color: #f5f5f1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Header styling */
+.recommendation-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e50914;
+  margin: 0 0 6px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #b3b3b3;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #757575;
+  font-style: italic;
+}
+
+/* Body text styling */
+.recommendation-body {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+  font-weight: 400;
+}
+
+/* Emphasized strong text */
+.recommendation-body strong {
+  color: #e50914;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .recommendation-card {
+    padding: 20px 20px 18px;
+  }
+  
+  .recommendation-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .recommendation-body {
+    font-size: 1rem;
+  }
+}
